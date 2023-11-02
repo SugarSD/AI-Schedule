@@ -7,15 +7,13 @@ function Home() {
     <>
       <div className="home">
         <header>
-          <div className="logo">logo</div>
+          <div className="logo"><Link to="/">logo</Link></div>
           <nav>
             <ul>
               <li>
                 <Link to="/dashboard">Dashboard</Link>
               </li>
-              <li>
-                <Link to="/login">Login</Link>
-              </li>
+              
             </ul>
           </nav>
         </header>
@@ -25,3 +23,7 @@ function Home() {
 }
 
 export default Home
+
+/*<li>
+<Link to="/login">Login</Link>
+</li>*/

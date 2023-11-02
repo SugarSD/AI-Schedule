@@ -5,6 +5,12 @@
 
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
 .home {
     /*background-color: aliceblue;*/
     width: 100vw;
@@ -33,21 +39,30 @@ nav ul {
     padding: 0;
     width: 100%;
     height: 100%;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
 nav ul li {
     height: 100%;
-    margin: 0 0.75rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 nav ul li a {
+    display: flex;
+    place-items: center;
     text-decoration: none;
+    padding: 0 1rem;
     color: white;
+    height: 100%;
+    width: 100%;
     font-size: 1.4rem;
     font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #d6d6d6;
 }
